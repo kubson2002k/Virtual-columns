@@ -26,7 +26,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**Usage**
+## Usage
  ```powershell
 import pandas as pd
 from solution import add_virtual_column
@@ -41,7 +41,7 @@ sales_total = add_virtual_column(fruits_sales, "quantity * price", "price_total"
 print(sales_total)
 ```
 
-**Expected output:**
+## Expected output:
 
 <img width="289" height="53" alt="image" src="https://github.com/user-attachments/assets/1d12fb76-f81c-4795-9e32-8a146407b951" />
 
