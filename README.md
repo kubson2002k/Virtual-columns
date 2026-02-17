@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ```
 
  **Mac / Linux:**
- ```powershell
+ ```bash
  python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -44,3 +44,12 @@ print(sales_total)
 **Expected output:**
 
 <img width="289" height="53" alt="image" src="https://github.com/user-attachments/assets/1d12fb76-f81c-4795-9e32-8a146407b951" />
+
+## Validation rules
+- Column names may contain only letters and underscores (`A-Z`, `a-z`, `_`).
+- `role` must have the form `<col> <op> <col>` with `op` in `+ - *` (whitespace optional).
+- If validation fails, the function returns an empty DataFrame.
+
+## Tests
+```bash
+pytest -q
